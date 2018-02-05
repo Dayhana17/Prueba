@@ -1,0 +1,22 @@
+Github:
+Herramienta para almacenar versiones de código fuentes, en la que se pueda volver a versiones anteriores o trabajar en versiones paralelas.
+1. Instalación:
+	en terminal: sudo apt-get install git
+	Para vincular la cuenta de github:
+		git config --global user.name "usuario"
+		git config --global user.email "cuenta de correo electrónico"
+2. Crear un nuevo repositorio
+	1. Crear una carpeta en la ruta deseada del computador
+	2.git init “Nombre de la carpeta a crear” (Crea un repositorio vacío terminado en .git [archivos que empiezan con punto son ocultos])
+
+Una vez se crea o se modifica algún archivo dentro del repositorio, se observa el estado en el que están utilizando “git status”, de manera que se conozca si las modificaciones han sido agregadas al repositorio.
+
+4. Agregar archivo a repositorio
+	git add “nombre del archivo”
+	git add . (agrega todos los archivos)
+
+5. Crear un commit
+	git commit
+	Para observar un histórico de los commits realizados: git log
+	Con el subcomando git dif se puede observar cuales partes del documento se han modificado (Estas salen de distinto color)
+ 
