@@ -7,16 +7,34 @@ Herramienta para almacenar versiones de código fuentes, en la que se pueda volv
 		git config --global user.email "cuenta de correo electrónico"
 2. Crear un nuevo repositorio
 	1. Crear una carpeta en la ruta deseada del computador
-	2.git init “Nombre de la carpeta a crear” (Crea un repositorio vacío terminado en .git [archivos que empiezan con punto son ocultos])
+	2.git init Carpeta (Crea un repositorio vacío terminado en .git [archivos que empiezan con punto son ocultos])
 
 Una vez se crea o se modifica algún archivo dentro del repositorio, se observa el estado en el que están utilizando “git status”, de manera que se conozca si las modificaciones han sido agregadas al repositorio.
 
 4. Agregar archivo a repositorio
-	git add “nombre del archivo”
+	git add Archivo
 	git add . (agrega todos los archivos)
 
 5. Crear un commit
 	git commit
 	Para observar un histórico de los commits realizados: git log
-	Con el subcomando git dif se puede observar cuales partes del documento se han modificado (Estas salen de distinto color)
+	Con el subcomando git dif se puede observar cuales partes del documento se han modificado 
+	Para crear modificaciones sin hacer un nuevo commit o para modificar un commit
+		git commit --amend
+
+6. Checkout
+	Para deshacer cambios que se hayan realizado en alguno de los archivos cuando aún no se ha 		realizado el commit: 
+		git checkout -- Archivo, esto descarta (odificcaciones locales)
+	git reset HEAD Archivo, para resetear un archivo
+
+7. Eliminar un commit
+	Cuando se desea realizar una modificación a un archivo al que ya se le ha realizado un 		commit. Si interesa dejar el repositorio a como estaba en cierto commit
+	Para ver el nombre de los commits y el mensaje: git log --oneline
+	git reset Codigo_del_commit, elimina el commit
+	git seset  --hard Codigo_del_commit, elimina el commit tanto de forma local como del stage.
+	git reset soft Codigo_del_commit, realiza las modificaciones y las deja en el stage.
+
+
+
+
  
