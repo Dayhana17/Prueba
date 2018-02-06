@@ -35,6 +35,6 @@ Una vez se crea o se modifica algún archivo dentro del repositorio, se observa 
 	git reset soft Codigo_del_commit, realiza las modificaciones y las deja en el stage.
 
 
-8. Revert: Permite revertir un commit
+
 
  
