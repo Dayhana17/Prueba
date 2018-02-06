@@ -34,7 +34,34 @@ Una vez se crea o se modifica algún archivo dentro del repositorio, se observa 
 	git seset  --hard Codigo_del_commit, elimina el commit tanto de forma local como del stage.
 	git reset soft Codigo_del_commit, realiza las modificaciones y las deja en el stage.
 
+8. Revert: Para revertir un commit. Las líneas que se quitan se agregan y viceversa. Es menos destructivo que reset
+	git revert Codigo_del_commit
+
+Otra opcion para no tener que poner el codigo del commit es conocer a que apunta el puntero HEAD, para esto se puede ver como
+	git log --oneline --decorate	
+si pongo HEAD~1, puedo ver el commit anterior, HEAD~2 … etc.
+Para crear un revert de varios commits revirtiendo los cambios pero sin hacer un commit
+cuando se finalice de realizar los reverts se  cierra con
+		git revert continue
 
 
+9. Ramas: Permite realizar varias cosas a la vez, donde cada rama es independiente entre sí. Para crear una nueva rama:
+	git branch 
+si ponemos este comando nos dice cuantas ramas hay… cuando no se tiene ninguna rama nos dirá *master (rama principal) y en verde (actualmente visualizando)
+
+Para ingresar o cambiar a ramas distintas de la master se utiliza 
+	git checkout Rama
+Para regresar a la rama master
+	git checkout master
+Para crear una rama y cambiarme a ella
+	git checkout -b Rama
+Para cambiar nombre a una rama se usa el parámetro -m 
+	git branch -m Nombre_antiguo Nombre_nuevo
+Eliminar rama
+	git branch -d Rama
+Para visualizar las demás opciones de branch
+	git branch -h
+
+10. Commits en distintas ramas
 
  
