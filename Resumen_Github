@@ -71,4 +71,8 @@ Se necesita estar en la rama destino y desde ahi digitar el siguiente comando, c
 	git merge Rama
 Para terminar de fusionar y que no aparezca al hacer log (master,Rama) se realiza un nuevo  merge para crear un nuevo commit que incorpore todos los cambios
 
+Conflicto Merge
+	Para crear cambios en el mismo archivo algunas veces se crean conflictos entre ramas
+
+
  
