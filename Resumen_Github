@@ -62,6 +62,12 @@ Eliminar rama
 Para visualizar las demás opciones de branch
 	git branch -h
 
-10. Commits en distintas ramas
+10. Commits en distintas ramas. Se abren los archivos y se realiza el commit normal, para ver el estado del repositorio:
+	git log --oneline --decorate
+
+11. Merge.  cuando  se tiene código en alguna rama y se requiere que estos cambios regresen a master, para que sea código estable y pueda ser utilizado, esto es realizando una fusión de los commits que había en master y de los commits que había en la rama.
+
+Se necesita estar en la rama destino y desde ahi digitar el siguiente comando, con el nombre de la rama destino:
+	git merge Rama
 
  
